@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DoZIon</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <!-- icon -->
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/04/34/74/41/240_F_434744168_Dk2Fg26hQKRuI9oBwITY5VwdXiPm9N5D.jpg">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/df4a292e2b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="top">
+      <div class="nav-bar">
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/4964/4964814.png" class="icon" alt="icon"></a>
+        <h1 class="heading">DoZIon</h1>
+        <p id="date"></p>
+      </div>
+    </section>
+
+    <section id="coins">
+      <div class="search">
+        <label for="" class="">ALL CURRENCIES</label>
+        <div class="search-bar"">
+          <input onkeyup="searchCoin()" class="bar" id="filter" type="search" placeholder="search coins" name="" value="">
+          <button class="search-btn" onclick="searchCoin()" type="submit" name="search"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="coin-container" id="coin-card">
+
+      </div>
+
+    </section>
+
+    <section id="bottom">
+      <div class="footer-bar">
+        <a class="footer-icon1 footer-icon" href="#"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+        <a class="footer-icon" href="#"><i class="fa-brands fa-github fa-1x"></i></a>
+        <a class="footer-icon" href="#"><i class="fa-solid fa-envelope fa-1x"></i></a>
+        <a class="footer-icon" href="#"><i class="fa-brands fa-facebook-square fa-1x"></i></a>
+
+        <p class="footer-text">2022 @DoZIon</p>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+  <script src="/public/api.js" charset="utf-8"></script>
+  <script src="/public/index.js" charset="utf-8"></script>
+  </body>
+</html>

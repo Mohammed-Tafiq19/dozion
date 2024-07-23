@@ -1,0 +1,373 @@
+/* h1 */
+h1{
+  font-size: 2rem;
+  font-family: Roboto;
+  margin: 20px 20px;
+  padding: 5px;
+}
+
+h2{
+  text-align: center;
+}
+
+
+
+
+/* body */
+body {
+  font-family: Montserrat;
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  background-color: black;
+}
+* , *::after, *::before{
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------------TOP SECTION --------------------------*/
+
+/* navbar */
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  color: black;
+  background-color: white;
+  position: sticky;
+  top:0;
+  z-index: 10;
+  height: 100px;
+  /* width: 1263.33px;
+  height: 113px; */
+  /* justify-content:space-around;
+   align-items: center; */
+  /* for absolute postioning of date relative to parent(here this is acting as a parent )  */
+}
+.icon{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 40px;
+  top: 8px;
+  /* top: 20px;
+  right: 80px; */
+}
+.heading{
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  /* position: relative;
+  right: 340px; */
+  /* bottom: 10px; */
+}
+#date{
+  /* take out of box element and position relative to its parent and if no parent it takes relative to html element or body */
+  /* position: absolute; */
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+.news-text{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.news{
+  height: 300px;
+  width: 300px;
+  margin: 80px;
+  /* border-width: medium;
+  border-color: white; */
+  /* border: solid; */
+  box-shadow: 0 0 10px rgba(108, 122, 137);
+
+}
+.news:hover{
+  /* background-color: grey; */
+  box-shadow: 0 0 20px white;
+  /* transform: scale(1.5); */
+}
+.news-head{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.news-btn{
+  padding: 5px;
+  font-size: 12px;
+  color: black;
+  border-style: hidden;
+  background-color: white;
+  max-width: 100%;
+  min-width: 70px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-inline: 5px;
+  border-radius: 10px;
+}
+.news-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.tagline{
+
+  position: relative;
+  right: 100px;
+}
+
+/*--------------------------------------------- MIDDLE-SECTION ---------------------------*/
+#middle{
+  height: 550px;
+}
+.slider{
+  margin: auto;
+  position: relative;
+  width: 60%;
+}
+.slider h1 {
+  color: #FFEDDB;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Merriweather;
+  transform: translateY(150%);
+}
+.box{
+  position:absolute;
+  height: 400px;
+  width: 100%;
+  border-width: medium;
+  border-color: white;
+  border: solid;
+  opacity: 0.75;
+}
+.box:hover{
+  background-color: #FFBCD1;
+  transform: scale(1.2);
+}
+
+.first-box{
+  background-image: url(https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2021/05/cryptocurrency-market.jpg?x63184);
+}
+.first-box h1{
+  transform: translateY(180%);
+}
+.second-box{
+  background-image: url(https://time.com/nextadvisor/wp-content/uploads/2021/07/na-crypto-terms-you-should-know-before-investing-884x584.jpg);
+  background-size: cover;
+}
+.third-box{
+  background-image: url(https://apicms.thestar.com.my/uploads/images/2022/01/09/1437380.jpg);
+  background-size: cover;
+}
+.fouth-box{
+  background-image: url(https://www.lotame.com/wp-content/uploads/2021/08/About-DataTech.png);
+  background-size: cover;
+}
+.fifth-box{
+  background-image: url(https://img.etimg.com/thumb/msid-80263701,width-650,imgsize-161986,,resizemode-4,quality-100/technology.jpg);
+  background-size: cover;
+}
+
+.btn{
+  position: absolute;
+  /* color: white; */
+  background: none;
+  border: none;
+  opacity: 1;
+  /* z-index: 2; */
+  font-size: 3rem;
+  /* top: 190px; */
+  transform: translateY(260%);
+}
+.btn:hover{
+  background-color: white;
+  opacity: .5;
+}
+.prev-btn{
+  left:0;
+}
+.next-btn{
+  right: 0;
+}
+
+/* --------------------------------------------CRTPYOCUREENCY ---------------------------------*/
+/* ------search bar------ */
+.search{
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+}
+.search label{
+  font-size: 20px;
+  margin-left: 200px;
+  font-family: 'comforter', cursive;
+}
+.bar{
+  margin-top: 20px;
+  margin-left: 130px;
+  width: 50%;
+  height: 30px;
+}
+.search-btn{
+  height: 25px;
+  border: none;
+}
+.search-btn:hover{
+  background-color: #2C3333;
+  color: white;
+}
+
+/* ------coins------ */
+
+.coin-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.coin{
+  border: solid .5px;
+  margin: 20px 20px;
+  height: 160px;
+  position: relative;
+  transition: .2s;
+  padding: 5px;
+}
+.coin:hover{
+  background-color: grey;
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.coin-title img{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.coin-price p{
+  position: absolute;
+  right: 20px;
+  margin-top: 0;
+}
+.coin-cap{
+  margin-top: 10px;
+}
+.coin-cap p{
+  position: absolute;
+  right: 20px;
+  margin-top: 0;
+}
+.coin-change{
+  margin-top: 10px;
+}
+.coin-change p{
+  position: absolute;
+  right: 20px;
+  margin-top: 0;
+}
+/* --------------------------------FOOTER SECTION------------------------------ */
+#bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 7px;
+
+}
+.footer-icon:hover{
+  color: black;
+}
+.footer-icon{
+  padding: 10px;
+}
+.footer-text{
+  text-align: center;
+  line-space: 1.5;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 10px;
+}
+
+/* -------------------------NEWS HTML--------------------------- */
+#news-section h2{
+  margin-top: 50px;
+
+}
+.news-container{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.news-item{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  min-width: 350px;
+  width: 40%;
+  padding: 7px;
+}
+.news-item h4{
+  padding: 7px;
+}
+.news-item:hover{
+  background-color: grey;
+  transform: scale(1.05);
+}
+
+/* ------------------------NEWS IN INDEX.HTML PAGE----------------------- */
+.news-item-indexpage{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.news-item-indexpage p{
+  font-size: 10px;
+  margin: 4px;
+}
+.news-text a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* --------------------PREDICTIONS SECTION------------------------- */
+
+.chart{
+  margin: auto;
+  width: 90%;
+  transition: box-shadow .3s;
+  border-radius: 5px;
+}
+
+.chart:hover{
+  box-shadow: 0 0 20px rgba(108, 122, 137);
+}
+
+/* ----------------------------GUIDE SECTION----------------------------- */
+
+.parent-div1,.parent-div2{
+  display: flex;
+  justify-content: space-around;
+}
+.side-div1,.side-div2{
+  padding: 10px;
+  border-radius: 5px;
+  transition: box-shadow .3s;
+}
+.side-div1:hover,.side-div2:hover{
+  box-shadow: 0 0 20px rgba(108, 122, 137);
+}
+
+/* ---------------------------TECH SECTION----------------------------- */
+
+.tech-a:hover{
+  color:blue;
+
+}
